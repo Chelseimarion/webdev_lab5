@@ -16,7 +16,7 @@
 	  <input type="text" id="last_name_field" name="last_name_field" size="100" required>
 	  <br><br>
 	  <label for="phone_field">Phone Number:</label>
-	  <input type="tel" id="phone_field" name="phone_field" size="100">
+	  <input type="tel" id="phone_field" name="phone_field" size="100" required>
 	  <br><br>
 	  <label for="email_field">Email:</label>
 	  <input type="email" id="email_field" name="email_field" size="100" required>
@@ -35,7 +35,7 @@
 	<br> 
 	<fieldset>
 	  <legend>Availability</legend>
-	  <input type="checkbox" id="morning" name="available_field[}" value="Morning">
+	  <input type="checkbox" id="morning" name="available_field[]" value="Morning">
 	  <label for="morning">Morning</label>
 	  <input type="checkbox" id="afternoon" name="available_field[]" value="Afternoon">
 	  <label for="afternoon">Afternoon</label>
@@ -53,8 +53,8 @@
 	  <option value="55+">55+</option>
 	</select>
 	<br><br>
-	<label for="comments-field>Comments:</label><br>
-	<textarea id="comment_field" name="commens_field" rows="4" cols="50"></textarea>
+	<label for="comments_field>Comments:</label><br>
+	<textarea id="comment_field" name="comments_field" rows="4" cols="50"></textarea>
 	<br><br>
 	<input type="hidden" name="hidden_field" value="Chelsei Marion">
 	<button type="submit">Submit</button>
