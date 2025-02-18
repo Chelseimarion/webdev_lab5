@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Lab 3 Form</title>
+</head>
+<body>
+  <h1>Volunteer Form<h1>
+  <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST">
+    <fieldset>
+	  <legend>My Info</legend>
+	  <label for="first_name_field">First Name:</label>
+	  <input type="text" id="first_name_field" name="first_name_field" required>
+	  <input type="hidden" name="hidden_field" value="Chelsei">
+	  <br><br>
+	  <label for="last_name_field">Last Name:</label>
+	  <input type="text" id="last_name_field" naem="last_name_field" required>
+	  <input typr="hidden" name="hidden_field" value="Marion">
+	  <br><br>
+	  <label for="phone_field">Phone Number:</label>
+	  <input type="tel" id="phone_field" name="phone_field">
+	  <br><br>
+	  <label for="email_field">Email:</label>
+	  <input type="email" id="email_field" name="email_field" required>
+	  <br><br>
+	</fieldset>
+	<br>
+	<fieldset>
+	  <legend>Gender: </legend>
+	  <input type="radio" id="male" name="gender_field" value="Male">
+	  <label for="male">Male</label>
+	  <input type="radio" id="female" name="gender_field" value="Female">
+	  <label for="female">Female</label>
+	  <input type="radio" id="other" name="gender_field" value="Other">
+	  <label for="other">Other</label>
+	</fieldset>       
+	<br> 
+	<fieldset>
+	  <legend>Availability</legend>
+	  <input type="checkbox" id="morning" name="available_field[}" value="Morning">
+	  <label for="morning">Morning</label>
+	  <input type="checkbox" id="afternoon" name="available_field[]" value="Afternoon">
+	  <label for="afternoon">Afternoon</label>
+	  <input type="checkbox" id="evening" name="available_field[]" value="Evening">
+	  <label for="evening">Evening</label>
+	</fieldset>
+	<br>
+	<label for="age_field">Age Group:</label>
+	<select id="age_field" name="age_field">
+	  <option value="Under 18">Under 18</option>
+	  <option value="18-24">18-24</option>
+	  <option value="25-34">25-34</option>
+	  <option value="35-44">35-44</option>
+	  <option value="45-54">45-54</option>
+	  <option value="55+">55+</option>
+	</select>
+	<br><br>
+	<label for="comments-field>Comments:</label><br>
+	<textarea id="comment_field" name="commens_field" rows="4" cols="50"></textarea>
+	<br><br>
+	<input type="hidden" name="hidden_field" value="Your Name Here">
+	<button type="submit">Submit</button>
+  </form>
+</body>
+</html> 
